@@ -203,3 +203,23 @@ def registerdonor(request):
     else:
         form = CreateUserForm()
     return render(request,'registerdonor.html',{'form':form})
+
+def admlogin(request):
+    if request.method == 'POST':
+        username=request.POST.get('username1')
+        password=request.POST.get('password4')
+        if (username=="asiya00" and password=="Sonu@2415"):
+            return render(request,'admindashboard.html')
+        else:
+            messages.error(request,'Please enter correct username and password')
+            return render(request,'adminlogin.html')
+    else:
+        return render(request,'adminlogin.html')
+
+def admindonor(request):
+    donor = DonorProfile.objects.all()
+    return render(request,'admindashboard.html',{'donor':donor})
+
+def adminreceiver(request):
+    receiver = Upload.objects.all()
+    return render(request,'adminreceivers.html',{'receiver':receiver})
