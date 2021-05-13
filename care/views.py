@@ -70,14 +70,14 @@ def donorprofile(request):
             saverecord.save()
             b = request.user
             try:
-                a = DonorProfile.objects.get(email = b.email)
+                a = DonorProfile.objects.get(id = b.id)
             except DonorProfile.DoesNotExist:
                 a=None
             return render(request,'donorprofile.html',{'a':a})
     else:
         b = request.user
         try:
-            a = DonorProfile.objects.get(email = b.email)
+            a = DonorProfile.objects.get(id = b.id)
         except DonorProfile.DoesNotExist:
             a=None
         return render(request,'donorprofile.html',{'a':a})
