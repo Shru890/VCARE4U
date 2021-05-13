@@ -14,7 +14,7 @@ cssselect==1.1.0
 cycler==0.10.0
 django==3.0.1
 django-phonenumber-field==5.1.0
-django-suit==2.0a1
+django-suit==0.3a1
 fake-useragent==0.1.11
 Faker==4.1.1
 Flask==1.1.2
