@@ -33,7 +33,6 @@ mccabe==0.6.1
 more-itertools==8.1.0
 mysqlclient==1.4.6
 numpy==1.18.1
-opencv-python==4.3.0.38
 packaging==20.0
 pandas==1.2.2
 parse==1.14.0
