@@ -34,7 +34,6 @@ urlpatterns = [
     path('login',LoginView.as_view(), name='login_url'),
     path('logout',LogoutView.as_view(next_page="home"), name='logout'),
     path('dashboard',views.dashboard,name='dashboard'),
-    path('signout', views.signout, name='signout'),
     path('upload', views.upload, name='upload'),
     path('howitworks',views.howitworks, name='howitworks'),
     path('howitworksdonor',views.howitworksdonor, name='howitworksdonor'),

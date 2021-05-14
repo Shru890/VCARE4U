@@ -185,8 +185,6 @@ def upload(request):
     else:
         return render(request,'upload.html')
 
-def signout(request):
-    return render(request,'signout.html')
 
 def howitworks(request):
     return render(request,'howitworks.html')
