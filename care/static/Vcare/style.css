@@ -109,13 +109,12 @@ button:hover{
 
 }
 .login-btn{
-    border: 1px solid rgb(255, 253, 255);
+    border: 1px solid #fff;
     border-radius: 100px;
     margin:0 5px;
     padding: 12px 35px;
     outline: none;
-    color: #eef5f4;
-    background-color:#74e4d5 ;
+    color: #fff;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
@@ -124,7 +123,7 @@ button:hover{
 
 }
 .login-btn:hover{
-    color: #fff;
+    color: white;
     background: #50d1c0;
     text-decoration: none;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
@@ -401,12 +400,12 @@ button:hover{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
-    background: #fff;
     text-align: center;
+    background: transparent;
 }
 form:hover .form-button button{
-    background: #7fe4d6;
-    color:#fff;
+    background: #fff;
+    color:#50d1c0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 .form-group{
@@ -612,8 +611,7 @@ h4{
     color: #dfdede;
 }
 #services   , p{
-    color: white;
-    font-size: 1rem;
+    color: #666666;
 
 }
 .cards{
