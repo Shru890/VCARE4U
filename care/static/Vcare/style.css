@@ -403,7 +403,6 @@ button:hover{
     line-height: 1.4;
     background: #fff;
     text-align: center;
-    /* background: transparent; */
 }
 form:hover .form-button button{
     background: #7fe4d6;
@@ -613,7 +612,7 @@ h4{
     color: #dfdede;
 }
 #services   , p{
-    color: #9b8f8f;
+    color: white;
     font-size: 1rem;
 
 }
