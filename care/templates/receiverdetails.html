@@ -1,4 +1,4 @@
-{% include 'donornav.html' %} 
+{% include 'donornav.html' %}
 <head>
 <title>Receiver Details</title>
 <style>
@@ -7,14 +7,14 @@
         border-collapse: collapse;
         width: 100%;
     }
-    
+
     td,
     th {
         border: 1px solid #dddddd;
         text-align: left;
         padding: 8px;
     }
-    
+
     tr:nth-child(even) {
         background-color: #dddddd;
     }
@@ -44,15 +44,14 @@
                 </tr>
                 {% endfor %}
             {% else %}
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
             {% endif %}
-        </tr>
     </table>
 </div>

@@ -1,3 +1,4 @@
+{% load static %}
 {% include 'nav.html' %}
 <head>
 <title> How It Works?</title>
@@ -14,9 +15,6 @@
     p{
       font-size:20px; 
     }
-    h4{
-      font-size:25px; 
-    }
 </style>
 </head>
 <div class="content">
@@ -31,13 +29,7 @@
     </p>
     <br>
     <p><h3>Process:</h3>
-    <h4>For Customer:</h4>
-    <h5>1. First click on Customer Register Button in Home Page.</h5>
-    <h5>2. Go To Fill Details.</h5>
-    <h5>3. Fill all the details and required donation type.</h5>
-    <h5>4. Click on Submit Button. A message of Eligibility and Success would be displayed on the top of the page.</h5>
-    <h5>5. Go To Dashboard to Explore the Government and International Schemes</h5>
-    <h5>6. Click on the home button to get back to main site.</h5>
+    <center><img src="{% static 'img/Customer.png' %}" height="800px" width="600px" alt="Customer instructions"></center>
     </p>
 
 </div>

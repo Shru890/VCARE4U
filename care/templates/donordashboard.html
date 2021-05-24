@@ -49,7 +49,7 @@ button {
             width: 100%;
             font-size: 18px;
         }
-        
+
         button:hover,
         a:hover {
             opacity: 0.7;
@@ -65,48 +65,23 @@ button {
 </head>
 <body>
 <div class="content">
-{% block content %}
-<h2>Welcome {{user.username}}</h2>
-{% endblock content %}
+  <br><br>
     <div class="row">
         <div class="column">
             <div class="card">
-                <h1>Blood Donation</h1>
-                <p class="title">Inter State</p>
-                <p><button><a href="http://nbtc.naco.gov.in/"><label style="color: aliceblue;">View Scheme</label></a></button></p>
+                <h2 style="background:#2F66ED; color:white;">Total Receivers</h2>
+                <br>
+                <br>
+                <h2><span class="glyphicon glyphicon-user"></span> &nbsp {{totalreceivers}}</h2>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
-                <h1>Organ Donation </h1>
-                <p class="title">National</p>
-                <p><button><a href="https://www.nhp.gov.in/organ-donation-day_pg#:~:text=Organ%20Donation%20is%20donating%20a,in%20need%20of%20an%20organ."><label style="color: aliceblue;">View Scheme</label></a></button></p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <h1>Milaap Free Crowdfunding for India</h1>
-                <p class="title">All over India</p>
-                <p><button><a href="https://milaap.org/"><label style="color: aliceblue;">View Scheme</label></a></button></p>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <h1>Charity<br></h1>
-                <p class="title">All over India</p>
-                <p><button><a href="https://transequality.org/"><label style="color: aliceblue;">View Scheme</label></a></button></p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <h1>Essential Commodities<br></h1>
-                <p class="title">Household purpose</p>
-                <p><button><a href="https://www.gogreendrop.com/blog/essential-household-items-you-should-donate/"><label style="color: aliceblue;">View Scheme</label></a></button></p>
+                <h2 style="background:#2F66ED; color:white;">Total Donors </h2>
+                <br>
+                <br>
+                <h2><span class="glyphicon glyphicon-user"></span> &nbsp {{totaldonors}}</h2>
             </div>
         </div>
     </div>

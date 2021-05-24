@@ -1,3 +1,4 @@
+{% load static %}
 {% include 'donornav.html' %}
 <head>
 <title> How It Works?</title>
@@ -14,9 +15,6 @@
     p{
       font-size:20px; 
     }
-    h4{
-      font-size:25px; 
-    }
 </style>
 </head>
 <div class="content">
@@ -31,16 +29,7 @@
     </p>
     <br>
     <p><h3>Process:</h3>
-    <h4>For Donor:</h4>
-    <h5>1. First click on Donor Register/Login Button in Home Page.</h5>
-    <h5>2. If new to this website, click on Sign up link.</h5>
-    <h5>3. Login with username and password.</h5>
-    <h5>4. Go To Profile.</h5>
-    <h5>5. Fill all the details.</h5>
-    <h5>6. Click on Submit Button. A success message will be displayed.</h5>
-    <h5>7. Go To Receiver Details to see the information for the people who need help and contact them via email or phone number in accordance with the type of donation they preferred for.</h5>
-    <h5>8. Go To Dashboard to Explore and Donate in Government and Private Schemes to help the poor.</h5>
-    <h5>9. Click on the Log out button to get back to main site.</h5>
+    <center><img src="{% static 'img/Donor.png' %}" height="800px" width="600px" alt="Donor instructions"></center>
     </p>
 
 </div>

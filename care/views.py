@@ -83,15 +83,11 @@ def donorprofile(request):
         return render(request,'donorprofile.html',{'a':a})
 
 
-def dashboard(request):
-    return render(request,'dashboard.html')
+def govschemes(request):
+    return render(request,'govschemes.html')
 
-@login_required
-def donordashboard(request):
-    return render(request,'donordashboard.html')
-
-def home(request):
-    return render(request,'home.html')
+def ngos(request):
+    return render(request,'ngos.html')
 
 
 def upload(request):
@@ -185,7 +181,6 @@ def upload(request):
     else:
         return render(request,'upload.html')
 
-
 def howitworks(request):
     return render(request,'howitworks.html')
 
@@ -206,7 +201,7 @@ def admlogin(request):
     if request.method == 'POST':
         username=request.POST.get('username1')
         password=request.POST.get('password4')
-        if (username=="careadmin" and password=="vcare4u21"):
+        if (username=="asiya00" and password=="Sonu@2415"):
             return render(request,'admindashboard.html')
         else:
             messages.error(request,'Please enter correct username and password')
@@ -221,3 +216,16 @@ def admindonor(request):
 def adminreceiver(request):
     receiver = Upload.objects.all()
     return render(request,'adminreceivers.html',{'receiver':receiver})
+
+def dashboard(request):
+    totalreceivers = Upload.objects.all().count()
+    totaldonors = DonorProfile.objects.all().count()
+    d = {'totaldonors':totaldonors,'totalreceivers':totalreceivers}
+    return render(request,'dashboard.html',d)
+
+@login_required
+def donordashboard(request):
+    totalreceivers = Upload.objects.all().count()
+    totaldonors = DonorProfile.objects.all().count()
+    d = {'totaldonors':totaldonors,'totalreceivers':totalreceivers}
+    return render(request,'donordashboard.html',d)

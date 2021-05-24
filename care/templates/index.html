@@ -2,22 +2,19 @@
 {% block title %}Home{% endblock title %}
 {% block body %}
 
-
-
-
 <section class="header-extradiv">
   <div class="container">
     <div class="row">
       <div class="extra-div col-lg-6 col-md-6 col-12" style = "background: linear-gradient(to bottom left, #ffffff 36%, #ccffff 100%);">
         <a href="#"><i class="fas fa-2x fa-user"></i></a>
         <h2>CUSTOMER</h2>
-        <a href="{% url 'dashboard' %}"><button class="login-btn" id="button" type="button">REGISTER</button></a>
+        <a href="{% url 'dashboard' %}"><button class="login-btn" id="button" type="button" style = "background-color:#50d1c0;">REGISTER</button></a>
       </div>
 
       <div class="extra-div col-lg-6 col-md-6 col-12" style = "background: linear-gradient(to bottom left, #ffffff 36%, #ccffff 100%);">
         <a href="#"><i class="fas fa-2x fa-user"></i></a>
         <h2>DONOR</h2>
-        <a href="{% url 'login_url' %}"><button class="login-btn">LOGIN/REGISTER</button></a>
+        <a href="{% url 'login_url' %}"><button class="login-btn" style = "background-color:#50d1c0;">LOGIN/REGISTER</button></a>
       </div>
 
     </div>
@@ -32,11 +29,11 @@
     <div class="section-title text-center">
       <div class="row">
         <div class="col-md-12 col-md-offset-1 ">
-          <h2 class="text-uppercase mt-0 line-height-1">What We Are Doing?</h2>
+          <h2 class="text-uppercase mt-0 line-height-1" style="color:white;">What We Are Doing?</h2>
           <div class="title-icon">
             <i class="fas fa-3x fa-hand-holding-heart"></i>
           </div>
-          <p>We are providing help to the needy by providing them what they need</p>
+          <p style="color:white;">We are providing help to the needy by providing them what they need</p>
         </div>
       </div>
     </div>
@@ -48,8 +45,8 @@
             <a href="#" class="">
               <i class="fas  fa-3x fa-hands-usd"></i>
             </a>
-            <h4 class="font-weight-600 mt-20">Donation orphan child</h4>
-            <p>All children deserve an education, nutrition, health, and protection—no matter where they live. We work
+            <h4 class="font-weight-600 mt-20"style="color:white;">Donation orphan child</h4>
+            <p style="color:white;">All children deserve an education, nutrition, health, and protection—no matter where they live. We work
               with orphanages in India to reunite children with their families and to provide each child with the
               quality of care and dignity that is their right.</p>
 
@@ -60,8 +57,8 @@
             <a href="#" class="">
               <i class="fas fa-3x fa-handshake"></i>
             </a>
-            <h4 class="font-weight-600 mt-20">Help The Helpless</h4>
-            <p>“No one is useless in this world who lightens the burdens of another.” “There is no exercise better for
+            <h4 class="font-weight-600 mt-20" style="color:white;">Help The Helpless</h4>
+            <p style="color:white;">“No one is useless in this world who lightens the burdens of another.” “There is no exercise better for
               the heart than reaching down and lifting people up.” “When we give cheerfully and accept gratefully,
               everyone is blessed.” “You have not lived today until you have done something for someone who can never
               repay you.”</p>
@@ -72,8 +69,8 @@
             <a href="#" class="">
               <i class="fas  fa-3x fa-globe"></i>
             </a>
-            <h4 class="font-weight-600 mt-20">Donation for poor</h4>
-            <p>Today, 690 million people around the world will go to bed on an empty stomach. But your gift means that
+            <h4 class="font-weight-600 mt-20" style="color:white;">Donation for poor</h4>
+            <p style="color:white;">Today, 690 million people around the world will go to bed on an empty stomach. But your gift means that
               one less child will be at risk of starvation tonight.Whether you decide to make a one-off donation or set
               up a monthly gift, you can change a life forever today. Often, one meal at the right time will be enough
               to make a difference between life and death.</p>
@@ -87,8 +84,8 @@
             <a href="#" class="">
               <i class="fas fa-3x fa-child"></i>
             </a>
-            <h4 class="font-weight-600 mt-20">Save The children</h4>
-            <p>Home to some of the most ancient surviving civilizations, today’s India is the world’s largest democracy
+            <h4 class="font-weight-600 mt-20" style="color:white;">Save The children</h4>
+            <p style="color:white;">Home to some of the most ancient surviving civilizations, today’s India is the world’s largest democracy
               and a rising economic powerhouse. But it is tackling major social, economic and environmental issues,
               including a huge gap between the wealthy and those living in poverty.While there is more wealth in India
               than ever before, and significant progress has been made, it hasn’t fully translated into health care and
@@ -119,8 +116,8 @@
 {% comment %} *****project done start*** {% endcomment %}
 
 {% comment %} *****Our Pricing Ends*** {% endcomment %}
-<!-- ******Aboutus start***** -->
-<section class="happyclients" id="aboutus">
+<!-- ******Our Happy Clients start***** -->
+<section class="happyclients" id="happyclientsdiv">
   <div class="container heading text-center">
     <h1 class="text-center font-weight-bold ">OUR TEAM</h1>
     <p class="text-capitalize pt-2"></p>
@@ -141,6 +138,7 @@
               <br>
               <h1>SHRUTI NAIR</h1>
               <h2>Frontend/Backend Developer</h2>
+              <button><a href="https://www.linkedin.com/in/shruti-nair-ba2824180/">&#127760;Connect</a></button>
             </div>
           </div>
 
@@ -151,25 +149,29 @@
               <br>
               <h1>ASIYA PATHAN</h1>
               <h2>Frontend/Backend Developer</h2>
+              <button><a href="https://www.linkedin.com/in/asiya-pathan-8aaab8193/">&#127760;Connect</a></button>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-3 col-12">
             <div class="box">
               <a href="#"><img src="/static/ahmed.png" class="img-fluid img-thumbnail" alt=""></a>
-              <p class="m-4">I love the logic and structure of coding and always strive to write elegant and efficient code whether it be HTML, CSS or JQuery</p>
+              <p class="m-4">I love the logic and structure of coding & always strive to write elegant & efficient code whether it be HTML, CSS or JQuery</p>
+              <br>
               <h1>AHMED MANIKWARE</h1>
               <h2>Frontend Developer</h2>
+              <button><a href="https://www.linkedin.com/in/ahmed-manikware-85481b180/">&#127760;Connect</a></button>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-3 col-12">
+           <div class="col-lg-3 col-md-3 col-12">
             <div class="box">
               <a href="#"><img src="/static/zarin.png" class="img-fluid img-thumbnail" alt=""></a>
               <p class="m-4">Passionate and a keen learner. Love to enhance my knowledge, explore, experience and learn new technology aspects.</p>
               <br>
               <h1>ZARIN KHAN</h1>
               <h2>Frontend Developer</h2>
+              <button><a href="https://www.linkedin.com/in/zarin-khan-178360196/">&#127760;Connect</a></button>
             </div>
           </div>
         </div>
@@ -179,7 +181,7 @@
 
   </div>
 </section>
-<!-- ******Aboutus Ends***** -->
+<!-- ******Our Happy Clients Ends***** -->
 <!-- ******Contact Us Start***** -->
 <section class="contactus" id="contactid">
   <div class="container heading text-center">
@@ -210,7 +212,7 @@
           </div>
           <br>
           <div class="d-flex justify-content-center form-button">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" style = "background-color:white;">Submit</button>
           </div>
         </form>
 
@@ -233,7 +235,7 @@
     <div class="row">
 
       <div class="text-center">
-        <p>Copyright ©2021 All rights reserved|This Website is made with love by Vcare4u Team</p>
+        <p>Copyright ©2019 All rights reserved|This Website is made with love by Vcare4u Team</p>
       </div>
       <div class="scrolltop float-right">
         <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
