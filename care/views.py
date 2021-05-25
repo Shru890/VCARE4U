@@ -25,7 +25,7 @@ def index(request):
         NEW MESSAGE :{}
         FROM: {}
         '''.format(data['comment'], data['email'])
-        send_mail(data['email'],message,email,['18co36@aiktc.ac.in'])
+        send_mail(data['email'],message,email,['vcareforyou21@gmail.com'])
     return render(request,'index.html')
 
 
