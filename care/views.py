@@ -201,7 +201,7 @@ def admlogin(request):
     if request.method == 'POST':
         username=request.POST.get('username1')
         password=request.POST.get('password4')
-        if (username=="asiya00" and password=="Sonu@2415"):
+        if (username=="careadmin" and password=="vcare4u21"):
             return render(request,'admindashboard.html')
         else:
             messages.error(request,'Please enter correct username and password')
