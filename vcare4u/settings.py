@@ -125,10 +125,11 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = 'ba227994339b19'
-EMAIL_HOST_PASSWORD = '823dd0e3b5f6b5'
-EMAIL_PORT = 2525
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = '18co08@aiktc.ac.in'
+EMAIL_HOST_PASSWORD = '12345678'
+EMAIL_PORT = 587
+EMAIL_USE_TLS= True
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
